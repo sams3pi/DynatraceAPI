@@ -5,11 +5,10 @@
   roles:
     - role: dynatrace.oneagent
   vars:
-    dynatrace_environment_url: mnn63238.live.dynatrace.com
-    dynatrace_paas_token: dt0c01.YECJMSDZFUED37SM4T5D73Q3.3257TNDFCQYT6S24GGYYPGZP5BFEC4PUF5SKSEJC5THXMXHQHNX4MW5BRVUC5AO3
+    dynatrace_environment_url: mbb49765.live.dynatrace.com
+    dynatrace_paas_token: dt0c01.PRCFV7CYZTJZA2AYK5PXEJ6E.UAG34VC3RGXG5OR3NERPN7A5QFRLHF72TNTRWYTQ5HWB4RDZEXRUAC6QLYXLVYV2
     dynatrace_oneagent_install_args:
-      APP_LOG_CONTENT_ACCESS: 1
-      INFRA_ONLY: 1
+      INFRA_ONLY: 0
       HOST_GROUP: "{{ host_group }}"
     dynatrace_oneagent_host_tags: ""
-    dynatrace_oneagent_host_metadata: batch={{ patch_batch }} friendly_name={{ friendly_name }}
+    dynatrace_oneagent_host_metadata: batch={{ patch_batch }} friendly_name={{ friendly_name }} team=sams3pi
