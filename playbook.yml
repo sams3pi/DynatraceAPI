@@ -1,0 +1,15 @@
+---
+- name: Install dynatrace
+  hosts: all
+  become: true
+  roles:
+    - role: dynatrace.oneagent
+  vars:
+    dynatrace_environment_url: mnn63238.live.dynatrace.com
+    dynatrace_paas_token: dt0c01.YECJMSDZFUED37SM4T5D73Q3.3257TNDFCQYT6S24GGYYPGZP5BFEC4PUF5SKSEJC5THXMXHQHNX4MW5BRVUC5AO3
+    dynatrace_oneagent_install_args:
+      APP_LOG_CONTENT_ACCESS: 1
+      INFRA_ONLY: 1
+      HOST_GROUP: "{{ host_group }}"
+    dynatrace_oneagent_host_tags: ""
+    dynatrace_oneagent_host_metadata: batch={{ patch_batch }} friendly_name={{ friendly_name }}
