@@ -8,6 +8,6 @@ vmware
 host_group=sams3pi-azure-vm
 
 [vmware]
-20.86.82.102
+20.86.24.42 patch_batch=2 friendly_name=vmwarevm01
 [vmware:vars]
-host_group=sams3pi-vmware-vm patch_batch=2 friendly_name=vmwarevm01
+host_group=sams3pi-vmware-vm 

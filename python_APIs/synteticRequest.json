@@ -1,0 +1,10 @@
+
+
+{
+    "frequencyMin": 10,
+    "type": "HTTP",
+    "name": "testAPIMonitor",
+    "enabled": true
+    
+
+}
