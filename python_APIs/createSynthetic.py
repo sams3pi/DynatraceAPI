@@ -3,19 +3,19 @@ import requests,json
 def createSynthetic():
 
    syntheticBodymin = {
-  "frequencyMin": 10,
-  "type": "HTTP",
-  "name": "restExample",
-  "locations": [
-    "GEOLOCATION-B1B096907F0E9A8C"
-  ],
-  "enabled": True,
-  "script": {
-  },
-  "tags": [
-    "fromAPI"
-  ]
-}
+      "frequencyMin": 10,
+      "type": "HTTP",
+      "name": "restExample",
+      "locations": [
+         "GEOLOCATION-B1B096907F0E9A8C"
+      ],
+      "enabled": True,
+      "script": {
+      },
+      "tags": [
+         "fromAPI"
+      ]
+   }
 
 
    syntheticBody=json.dumps(syntheticBodymin)
