@@ -1,13 +1,8 @@
 [all:children]
 azure
-vmware
 
 [azure]
-20.86.82.102 patch_batch=1 friendly_name=azurevm01
+20.102.107.99 patch_batch=1 friendly_name=azurevm01
 [azure:vars]
 host_group=sams3pi-azure-vm
 
-[vmware]
-20.86.24.42 patch_batch=2 friendly_name=vmwarevm01
-[vmware:vars]
-host_group=sams3pi-vmware-vm 
